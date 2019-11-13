@@ -15,9 +15,6 @@ class BookAdmin(admin.ModelAdmin):
     inlines = [BooksInstanceInline]
 
 
-
-
-
 #admin.site.register(Author)
 
 class BooksInline(admin.TabularInline):
