@@ -3,6 +3,8 @@
 {% block content %}
   <h1>Name: {{ author.first_name }} {{ author.last_name }}</h1>
 
+  <a href="{{ author.get_absolute_url }}/update"><input type='submit' class="btn btn-primary" value="Editar"></a>
+  <a href="{{ author.get_absolute_url }}/delete"><input type='submit' class="btn btn-danger" value="Excluir"></a>
 
   <div style="margin-left:20px;margin-top:20px">
     <h4>Books</h4>
@@ -13,4 +15,5 @@
         {% endfor %}
     <!-- {% endif %} -->
   </div>
+
 {% endblock %}

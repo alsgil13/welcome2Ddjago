@@ -1,6 +1,7 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
+
   <h1>Author List</h1>
   {% if author_list %}
   <ul>
@@ -10,7 +11,9 @@
       </li>
     {% endfor %}
   </ul>
+  
   {% else %}
     <p>There are no Authors in the library.</p>
   {% endif %}       
+  <a href="../author/create"><input type='submit' class="btn btn-success" value="Cadastrar Novo Autor"></a>
 {% endblock %}
